@@ -33,18 +33,16 @@
 .navbar div {
     display: flex; /* Устанавливает div как flex-контейнер */
     margin-right: 20px; /* Добавляет отступ справа у div */
+    flex-direction: row;
 }
 
 .navbar div a {
     text-decoration: none; /* Убирает подчеркивание у ссылок в div */
     color: aliceblue; /* Устанавливает цвет текста ссылок черным */
     margin: auto; /* Центрирует текст внутри div */
+    margin-right: 20px;
 }
 
-.navbar div:hover {
-    background-color: #7cc6e5; /* Изменяет фоновый цвет div при наведении курсора */
-    border-radius: 20%; /* Скругляет углы div при наведении курсора */
-}
 
 /* Контейнер с элементами, использующий Flexbox для адаптивного размещения */
 .container {
@@ -219,6 +217,82 @@ P{
     display: none;
 }
 
+.navbar ul .work {
+    position: relative; /* Set the position to relative to enable absolute positioning of its child elements */
+    display: flex; /* Use flexbox for layout */
+    z-index: 10; /* Set stacking order */
+}
+
+.navbar ul .work ul {
+    position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
+    flex-direction: column; /* Arrange children in a column */
+    left: 0; /* Align the left edge of the dropdown with the parent */
+    top: 100%; /* Position the top of the dropdown just below the parent */
+    width: 100px; /* Set a fixed width for the dropdown */
+    display: none; /* Initially hide the dropdown */
+    padding: 0; /* Remove default padding */
+    z-index: 20; /* Set a higher stacking order for the dropdown */
+}
+
+.navbar ul .work ul li {
+    z-index: 20; /* Ensure list items have the same stacking order as the parent */
+    background:  radial-gradient(circle at top left, black, gray ,black ) ; /* Set background color */
+    margin-bottom: 0px; /* Add space between items */
+}
+
+.navbar ul .work:hover ul {
+    display: block; /* Show the dropdown when hovering over the parent */
+}
+
+.navbar ul .work ul li:hover {
+    background-color: white; /* Change background color on hover */
+    border-radius: 0; /* Remove border radius */
+}
+.form {
+    flex-direction: column; /* Arrange the children of the .form container in a column layout */
+}
+
+.form form {
+    display: flex; /* Use flexbox for the form layout */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+.form form fieldset {
+    display: flex; /* Use flexbox for the fieldset layout */
+    flex-direction: column; /* Arrange fieldset elements in a column */
+    width: 60%; /* Set the width of the fieldset to 50% of the container */
+    margin: auto; /* Center the fieldset horizontally */
+    margin-top: 30px; /* Add a margin of 30px to the top */
+    margin-bottom: 0px; /* Add a margin of 10px to the bottom */
+    Color: #cc180f;
+}
+
+.form form fieldset input {
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom of each input element */
+}
+
+.form form fieldset legend {
+    text-align: center; /* Center the legend text */
+    font-size: 1.2rem; /* Set the font size of the legend text to 1.2rem */
+    font-weight: bold; /* Make the legend text bold */
+}
+
+.form form button {
+    width: 200px; /* Set the width of the button to 200px */
+    font-size: 1.2rem; /* Set the font size of the button text to 1.2rem */
+    background-color: #81d6fa; /* Set the background color of the button */
+    color: white; /* Set the text color of the button to white */
+    margin: auto; /* Center the button horizontally */
+    margin-bottom: 20px; /* Add a margin of 20px to the bottom */
+}
+
+.form form button:hover {
+    font-size: 1.2rem; /* Maintain the font size of the button text on hover */
+    background-color: #91130c; /* Change the background color of the button on hover */
+    color: rgb(248, 243, 243); /* Change the text color of the button on hover */
+}
+
+
 @media (max-width: 700px) {
     /* При ширине экрана до 700px */
 
@@ -300,7 +374,7 @@ P{
         width: 40px; /* Ширина контейнера */
         height: 40px; /* Высота контейнера */
         margin: auto; /* Автоматические отступы по бокам для центрирования */
-        margin-left: -40px; /* Отступ слева */
+        margin-left: -10px; /* Отступ слева */
         margin-right: 5px; /* Отступ справа */
     }
     
@@ -342,6 +416,9 @@ P{
     .burger span:nth-child(3) {
         transform: translateY(10px); /* Перемещение третьей полоски вниз на 10px */
     } /* Стили для списка навигационного меню */
+    .navbar {
+        background: radial-gradient(circle at top left, gray,black ,gray )
+    }
     .navbar ul {
         position:absolute; /* Абсолютное позиционирование относительно ближайшего позиционированного предка, в нашем случае экрана. */
         background: radial-gradient(circle at top left, black, gray ,black ); /* Радужный градиентный фон от верхнего левого угла */
@@ -403,6 +480,40 @@ P{
     .navbar.open .burger span:nth-child(3) {
         transform: translateY(0) rotate(-45deg); /* Поворачивает третью полоску на -45 градусов и возвращает в исходное положение по вертикали */
     }
+    .navbar ul .work ul {
+        position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
+        flex-direction: column; /* Arrange children in a column */
+        left: -100%; /* Offset the dropdown 10px from the left of the parent */
+        top: 10; /* Align the top of the dropdown with the top of the parent */
+        width: 100%; /* Set a fixed width for the dropdown */
+        display: none; /* Initially hide the dropdown */
+        padding: 0; /* Remove default padding */
+        z-index: 20; /* Set a higher stacking order for the dropdown */
+        
+    }
+    .navbar ul .work ul li {
+        margin-top: 0; /* Remove top margin */
+        margin-bottom: 5px; /* Add bottom margin */
+        background-color: unset; /* Remove default background color */
+        font-size: 1.2rem; /* Increase font size */
+        margin-left: 10px; /* Offset the list item 10px from the left */
+        color: WHITE; /* Set text color to black */
+    }
+    .navbar ul .work ul li:hover {
+        background-color: black; /* Change background color to black on hover */
+    }
+    
+    .navbar ul .work ul li:hover a:hover {
+        color: rgb(192, 192, 192); /* Change text color to white when hovering over the link */
+    }
+    .navbar ul .work:hover ul li a {
+        color: rgb(255, 169, 169); /* Set text color to black when hovering over the parent */
+    }
+    .form form fieldset{
+        width: 80%;
+    }
+
+    
 
 }
 
@@ -416,5 +527,8 @@ P{
         width: 320px; /* Ширина изображения фиксирована */
         height: 200px; /* Высота изображения фиксирована */
         margin: auto; /* Центрирование изображения по горизонтали */
+    }
+    .form form fieldset{
+        width: 80%;
     }
 }
