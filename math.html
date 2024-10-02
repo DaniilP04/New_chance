@@ -33,7 +33,47 @@
             </div>
         </div>
     </nav>
-    <main class...></main>
+    <main class="math">
+        <form>
+            <fieldset>
+                <legend>Calculator</legend>
+                <div class="counters">
+                    <div>
+                        <label for="first">First<br>number</label>
+                        <input type="number" id="first" name="first" placeholder="0">
+                    </div>
+                    <div>
+                        <label for="second">Second<br>number</label>
+                        <input type="number" id="second" name="second" placeholder="0">
+                    </div>
+                </div>
+                <div class="butcont">
+                    <button id="butplus">+</button>
+                    <button id="butminus">-</button>
+                    <button id="butmult">*</button>
+                    <button id="butdiv">/</button>
+                </div>
+                <p><span id="result">0</span></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>trigonometric</legend>
+                <div class="counters">
+                    <div>
+                        <label for="variable">Variable</label>
+                        <input type="number" id="variable" name="variable" placeholder="0">
+                    </div>
+                </div>
+                <div class="butcont">
+                    <button id="butsin">sin()</button>
+                    <button id="butcos">cos()</button>
+                    <button id="buttg">tg()</button>
+                    <button id="butctg">ctg()</button>
+                </div>
+                <p>result:<span id="angle">0</span></p>
+            </fieldset>
+        </form>
+    </main>
     <footer>
         <a href="https://www.youtube.com/watch?v=-6NQx4WRRg0" target="_blank"><img src="./src/public/yt.png" height="50" width="50" alt ='youtube'></a>
         <a href="https://www.instagram.com/teamfortress2/" target="_blank"><img src="./src/public/inst.png"height="50" width="50" alt="instagram"></a>
