@@ -292,6 +292,79 @@ P{
     color: rgb(248, 243, 243); /* Change the text color of the button on hover */
 }
 
+.math {
+    display: flex; /*more responsive to change*/
+}
+.math form {
+    display: flex; 
+    flex-direction: column; /*vertical block*/
+    margin: auto; /*form in center*/
+    padding-top: 20px; /*space between top and content*/
+    width: 100%; /*full of container*/
+} 
+.math form fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    margin: auto;
+    margin-bottom: 30px; /*space between fieldset and element under it*/
+    color: #4dbbea;
+}
+.math form fieldset legend{
+    text-align: center; /*center text*/
+    font-size: 1.2rem; /*size of text*/
+}
+
+.math form fieldset .counters{
+    display: flex;
+    flex-direction: row; /*gorisontal row*/
+    justify-content: center; /*center objects*/
+    gap: 10px; /*10 pixels space between elements */
+    margin-bottom: 20px; /*20 pixels space under counters*/
+}
+
+.math form fieldset .counters div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.math form fieldset .counters div label, input {
+    margin: auto;
+    text-align: center;
+}
+
+.math form fieldset .counters div input {
+    width: 70%;
+    font-size: 1.1rem;
+    color: #ea4da3;
+}
+
+.math form fieldset .butcont{
+    display: flex;
+    flex: row;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #4dbbea;
+}
+
+.math form fieldset .butcont button {
+    display: block; /*use all size of block*/
+    width: 20%;
+    box-sizing: border-box; /**/
+    height: 40px; /*height for button*/
+    margin: auto; /*horizontal center*/
+}
+.math form fieldset p {
+    display: flex;
+    margin: 0; /*delete empty space*/
+    color: #4dbbea;
+}
+.math form fieldset p span {
+    margin: auto;
+    font-size: 1.2rem;
+}
+
 
 @media (max-width: 700px) {
     /* При ширине экрана до 700px */
@@ -513,7 +586,10 @@ P{
         width: 80%;
     }
 
-    
+    .math form fieldset{
+        width: 70%;
+
+    }
 
 }
 
