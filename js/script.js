@@ -56,14 +56,11 @@ div.addEventListener("click", (Event) => {
     calculus("/");
 });
 
-function toRadians(degree) {
-    return degree * (Math.PI / 180);
-}
 
 let val = 0;
 function trigonometric(operation) {
-    const num_in_degrees = parseFloat(variable.value) || 0;
-    const num = toRadians(num_in_degrees); 
+    const num3 = parseFloat(variable.value) || 0;
+    num = (num3*Math.PI)/180; 
 
     switch(operation) {
         case "sin":
