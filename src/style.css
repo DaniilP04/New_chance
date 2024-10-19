@@ -369,6 +369,10 @@ P{
     display: flex;
     flex-direction: column;
 }
+.API img:hover {
+    transform: scale(1.4); 
+    transition: 0.5s ease; 
+}
 .API span {
     Color: #0985c4;
     display: inline;
@@ -689,7 +693,10 @@ P{
         width: 70%;
 
     }
-
+    .API img:hover {
+        transform: scale(1.05); 
+        transition: 0.5s ease; 
+    }
     .API .Egypt{
         width: 100%;
     }
@@ -737,6 +744,10 @@ P{
     }
     .form form fieldset{
         width: 80%;
+    }
+    .API img:hover {
+        transform: scale(1.2); 
+        transition: 0.5s ease; 
     }
     .API .Egypt{
         width: 100%;
