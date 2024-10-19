@@ -365,6 +365,105 @@ P{
     font-size: 1.2rem;
 }
 
+.API {
+    display: flex;
+    flex-direction: column;
+}
+.API span {
+    Color: #0985c4;
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid rgb(12, 6, 6);
+    border-radius: 10px;
+}
+.API .Egypt{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.API .Egypt img,span{
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+.API .Egypt img {
+    border-radius: 10px;
+}
+.API .Upward{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.API .Upward img,span{
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Upward img {
+    border-radius: 10px;
+}
+.API .Well{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.API .Well img,span{
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+.API .Well img {
+    border-radius: 10px;
+}
+.API .fort{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.API .fort img,span{
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+.API .fort img {
+    border-radius: 10px;
+}
+.API .ghostfort{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.API .ghostfort img,span{
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+.API .ghostfort img {
+    border-radius: 10px;
+}
+
 
 @media (max-width: 700px) {
     /* При ширине экрана до 700px */
@@ -591,6 +690,38 @@ P{
 
     }
 
+    .API .Egypt{
+        width: 100%;
+    }
+    .API .Upward{
+        width: 100%;
+    }
+    .API .Well{
+        width: 100%;
+    }
+    .API .fort{
+        width: 100%;
+    }
+    .API .ghostfort{
+        width: 100%;
+    }
+
+    .API .Egypt span{
+        font-size: 1rem;
+    }
+    .API .Upward span{
+        font-size: 1rem;
+    }
+    .API .Well span{
+        font-size: 1rem;
+    }
+    .API .fort span{
+        font-size: 1rem;
+    }
+    .API .ghostfort span{
+        font-size: 1rem;
+    }
+
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
@@ -607,4 +738,35 @@ P{
     .form form fieldset{
         width: 80%;
     }
+    .API .Egypt{
+        width: 110%;
+    }
+    .API .Upward{
+        width: 110%;
+    }
+    .API .Well{
+        width: 110%;
+    }
+    .API .fort{
+        width: 110%;
+    }
+    .API .ghostfort{
+        width: 110%;
+    }
+    .API .Egypt span{
+        font-size: 1.05rem;
+    }
+    .API .Upward span{
+        font-size: 1.05rem;
+    }
+    .API .Well span{
+        font-size: 1.05rem;
+    }
+    .API .fort span{
+        font-size: 1.05rem;
+    }
+    .API .ghostfort span{
+        font-size: 1.05rem;
+    }
+
 }
