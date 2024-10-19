@@ -388,7 +388,7 @@ P{
 
 .API .Egypt img,span{
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 .API .Egypt img {
@@ -405,7 +405,7 @@ P{
 
 .API .Upward img,span{
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
@@ -423,7 +423,7 @@ P{
 
 .API .Well img,span{
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 .API .Well img {
@@ -440,7 +440,7 @@ P{
 
 .API .fort img,span{
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 .API .fort img {
@@ -457,7 +457,7 @@ P{
 
 .API .ghostfort img,span{
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 .API .ghostfort img {
@@ -739,19 +739,19 @@ P{
         width: 80%;
     }
     .API .Egypt{
-        width: 110%;
+        width: 100%;
     }
     .API .Upward{
-        width: 110%;
+        width: 100%;
     }
     .API .Well{
-        width: 110%;
+        width: 100%;
     }
     .API .fort{
-        width: 110%;
+        width: 100%;
     }
     .API .ghostfort{
-        width: 110%;
+        width: 100%;
     }
     .API .Egypt span{
         font-size: 1.05rem;
